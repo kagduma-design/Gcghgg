@@ -1,0 +1,74 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: sans-serif;
+  background: black;
+}
+
+.night {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #000000, #111111);
+  z-index: -1;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+}
+
+.buttonContainer {
+  position: absolute;
+  top: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #ff69b4;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.flowerContainer {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picturesContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.picturesContainer img {
+  width: 150px;
+  margin: 5px;
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+/* Slide up animation for images */
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
