@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/gift.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/index.css">
+  <title>FLOWERS FOR SOMEONE</title>
+</head>
+
+<body>
+  <!-- Background -->
+  <div class="night"></div>
+
+  <!-- Title -->
+  <h1 class="title">FLOWERS FOR SOMEONE</h1>
+
+  <!-- Button -->
+  <div class="buttonContainer">
+    <button id="openBtn" class="btn">
+      <span class="text">Yes / Open</span>
+    </button>
+  </div>
+
+  <!-- Flower Animation -->
+  <div id="flowerContainer" class="flowerContainer" style="display:none;">
+    <!-- You can paste your full flower HTML animation here -->
+    <h2 style="color:white; text-align:center;">🌸 Flower Animation 🌸</h2>
+  </div>
+
+  <!-- Pictures -->
+  <div id="picturesContainer" class="picturesContainer" style="display:none;">
+    <!-- Add 30 images: 1.jpg → 30.jpg -->
+    <img src="images/1.jpg" alt="">
+    <img src="images/2.jpg" alt="">
+    <img src="images/3.jpg" alt="">
+    <!-- ... up to 30.jpg -->
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" src="music.mp3"></audio>
+
+  <!-- Video -->
+  <video id="finalVideo" width="80%" style="display:none;" controls>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
